@@ -38,7 +38,7 @@ function sendJSON(){
 
     // Create a state change callback 
 
-    xhr.onreadystatechange = function () { 
+    xhr.onreadystatechange = function (param) { 
 
         if (xhr.readyState === 4 && xhr.status === 200) { 
 
@@ -65,6 +65,10 @@ function sendJSON(){
 
     // Sending data with the request 
 
-    xhr.send(data); 
-
-} 
+ /*   JSON.stringify({
+        
+        function (param) {     // working on it for correct results........
+            return param;
+        }
+    })*/
+}
